@@ -1,0 +1,26 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgb(34, 34, 34);
+  padding: 0px 10px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 18px;
+  height: 50px;
+}
+
+.navLink {
+  display: block;
+  transition: all 0.5s ease;
+  margin: 0 10px;
+  color: rgb(200, 200, 200);
+
+  &:hover {
+    color: rgb(255, 255, 255);
+  }
+}
+
+.navbar a:first-of-type {
+  margin-left: 80px;
+}
