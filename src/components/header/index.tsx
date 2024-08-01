@@ -9,11 +9,17 @@ export function Header() {
         <Link href={"/"} className={styles.navLink}>
           Home
         </Link>
+
         <Link href={"/repositorios"} className={styles.navLink}>
           Repositórios
         </Link>
+
         <Link href={"/contatos"} className={styles.navLink}>
           Contatos
+        </Link>
+
+        <Link href={"/dashboard"} className={styles.navLink}>
+          Dashboard
         </Link>
       </div>
     </header>
