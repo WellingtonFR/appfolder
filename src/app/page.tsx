@@ -1,4 +1,5 @@
 import { OwnerRepo } from "@/components/OwnerRepo";
+import next from "next";
 
 interface DataProps {
   id: number;
@@ -13,7 +14,7 @@ interface DataProps {
 }
 
 async function getData() {
-  const response = await fetch("https://api.github.com/users/wellingtonfr/repos");
+  const response = await fetch("https://api.github.com/users/wellingtonfr/repos", { next: { revalidate: 120 } });
 
   return response.json();
 }
